@@ -12,6 +12,7 @@
         <module>spring01</module>
         <module>spring02-DI</module>
         <module>spring03-Autowired</module>
+        <module>spring04-anno</module>
     </modules>
 
     <dependencies>

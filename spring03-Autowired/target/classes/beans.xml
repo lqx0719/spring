@@ -16,7 +16,7 @@
     </bean>
     -->
 
-    <!--自动装配之根据名字装配 -->
+    <!--自动装配: 根据名字/类型装配 -->
     <bean id="people" class="People" autowire="byName">
         <property name="name" value="lqx"></property>
     </bean>
