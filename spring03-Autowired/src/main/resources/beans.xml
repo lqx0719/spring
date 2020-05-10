@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cat" class="Cat"></bean>
+    <bean id="dog" class="Dog"></bean>
+
+    <!--手动装配-->
+    <!--
+    <bean id="people" class="People">
+        <property name="name" value="lqx"></property>
+        <property name="cat" ref="cat"></property>
+        <property name="dog" ref="dog"></property>
+    </bean>
+    -->
+
+    <!--自动装配: 根据名字/类型装配 -->
+    <bean id="people" class="People" autowire="byName">
+        <property name="name" value="lqx"></property>
+    </bean>
+</beans>

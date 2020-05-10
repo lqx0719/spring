@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--P命名空间，可以直接注入，不需要用property-->
+    <bean id="user" class="User" p:age="24" p:name="lqx"></bean>
+
+    <!--C命名空间，可以直接注入，不需要用constructor-arg-->
+    <bean id="user2" class="User" c:age="24" c:name="lqx"></bean>
 
     <bean id="addr" class="Address"></bean>
     <bean id="student" class="Student">
