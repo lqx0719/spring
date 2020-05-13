@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring01" />
         <module name="spring04-anno" />
         <module name="spring02-DI" />
         <module name="spring05-appconfig" />
         <module name="spring03-Autowired" />
+        <module name="proxy" />
+        <module name="spring01" />
       </profile>
     </annotationProcessing>
   </component>
