@@ -9,6 +9,7 @@
         <module name="spring01" />
         <module name="spring04-anno" />
         <module name="spring02-DI" />
+        <module name="spring05-appconfig" />
         <module name="spring03-Autowired" />
       </profile>
     </annotationProcessing>
