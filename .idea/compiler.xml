@@ -12,6 +12,7 @@
         <module name="spring03-Autowired" />
         <module name="proxy" />
         <module name="spring01" />
+        <module name="spring06-AOP" />
       </profile>
     </annotationProcessing>
   </component>

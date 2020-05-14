@@ -15,6 +15,7 @@
         <module>spring04-anno</module>
         <module>spring05-appconfig</module>
         <module>proxy</module>
+        <module>spring06-AOP</module>
     </modules>
 
     <dependencies>

@@ -9,8 +9,10 @@ public class MyInvocationHandler implements InvocationHandler,HelloWorld {
         this.helloWorld = helloWorld;
     }
 
+    //处理代理实例，并返回结果
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("Proxy begin!");
+        //动态代理的实现是利用反射来实现
         method.invoke(helloWorld,args);
         return null;
     }
