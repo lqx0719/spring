@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lqx.dao.UserMapper">
+    <select id="getUsers" resultType="lqx.pojo.User">
+        select * from user
+    </select>
+    <insert id="addUser" parameterType="lqx.pojo.User">
+        insert into user (id,name,pwd) values (#{id},#{name},#{pwd})
+    </insert>
+    <update id="updateUser" parameterType="lqx.pojo.User">
+  update user set name=#{name},pwd=#{pwd} where id = #{id}
+</update>
+</mapper>
